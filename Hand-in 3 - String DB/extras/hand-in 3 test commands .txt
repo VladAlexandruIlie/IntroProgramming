@@ -1,0 +1,12 @@
+ SELECT * FROM courses;
+ DROP TABLE students ;
+ CREATE TABLE teachers ( name varchar , username varchar ) ;
+ INSERT INTO teachers VALUES ( 'Troels_Bjerre_Lund' , 'trbj' ) ;
+ SELECT name AS alias , username AS secret_email, email AS Mail INTO superheroes FROM teachers ;
+ SELECT * INTO joined FROM orders INNER JOIN customers ON CustomerID = ID ;
+
+
+
+CREATE TABLE teachers ( name varchar , username varchar , email varchar) ;
+SELECT name AS alias , username AS secret_email INTO superheroes FROM teachers ;
+INSERT INTO Students VALUES ( 'JOHN_Michael' , 'jhsm' , 'more', 'andanotherone') ;
